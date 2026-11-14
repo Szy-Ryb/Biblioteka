@@ -9,6 +9,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 // projekt zaliczeniowy: prosty system obsługi biblioteki.
@@ -28,41 +29,46 @@ public class Main {
             return;
         }
 
-        while (true) { // wyświetlanie menu do chwili wyjścia
-            System.out.println("Copyright Szymon Rybikowski"); // copyright
-            System.out.println();
-            System.out.println("===== MENU GŁÓWNE ====="); // główne opcje programu
-            System.out.println("1. Lista książek");
-            System.out.println("2. Wypożycz książkę");
-            System.out.println("3. Książki wypożyczone");
-            System.out.println("4. Książki po terminie");
-            System.out.println("5. Dodaj, edytuj lub usuń książkę");
-            System.out.println("6. Wyjście");
+        try {
+            while (true) { // wyświetlanie menu do chwili wyjścia
+                System.out.println("Copyright Szymon Rybikowski"); // copyright
+                System.out.println();
+                System.out.println("===== MENU GŁÓWNE ====="); // główne opcje programu
+                System.out.println("1. Lista książek");
+                System.out.println("2. Wypożycz książkę");
+                System.out.println("3. Książki wypożyczone");
+                System.out.println("4. Książki po terminie");
+                System.out.println("5. Dodaj, edytuj lub usuń książkę");
+                System.out.println("6. Wyjście");
 
-            switch (readInt("Wybierz opcję: ")) { // wykonanie wybranej akcji
-                case 1:
-                    showBooks(books); // pokazanie całego katalogu
-                    break;
-                case 2:
-                    borrowBook(); // wybór i wypożyczenie książki
-                    break;
-                case 3:
-                    showActiveLoans(); // pokazanie aktywnych wypożyczeń
-                    break;
-                case 4:
-                    showOverdueLoans(); // pokazanie zaległych zwrotów
-                    break;
-                case 5:
-                    manageBooks(); // otwarcie podmenu książek
-                    break;
-                case 6:
-                    saveData(); // zapis danych przed zakończeniem
-                    System.out.println("Do widzenia!"); // pożegnanie użytkownika
-                    scanner.close(); // zwolnienie skanera wejścia
-                    return;
-                default:
-                    System.out.println("Błąd!! Nie ma takiej opcji!"); // komunikat dla błędnego wyboru
+                switch (readInt("Wybierz opcję: ")) { // wykonanie wybranej akcji
+                    case 1:
+                        showBooks(books); // pokazanie całego katalogu
+                        break;
+                    case 2:
+                        borrowBook(); // wybór i wypożyczenie książki
+                        break;
+                    case 3:
+                        showActiveLoans(); // pokazanie aktywnych wypożyczeń
+                        break;
+                    case 4:
+                        showOverdueLoans(); // pokazanie zaległych zwrotów
+                        break;
+                    case 5:
+                        manageBooks(); // otwarcie podmenu książek
+                        break;
+                    case 6:
+                        saveData(); // zapis danych przed zakończeniem
+                        System.out.println("Do widzenia!"); // pożegnanie użytkownika
+                        scanner.close(); // zwolnienie skanera wejścia
+                        return;
+                    default:
+                        System.out.println("Błąd!! Nie ma takiej opcji!"); // komunikat dla błędnego wyboru
+                }
             }
+        } catch (NoSuchElementException e) { // obsługa końca danych wejściowych
+            System.out.println("Koniec danych wejściowych. Zamykanie programu.");
+            return;
         }
     }
 
@@ -158,7 +164,11 @@ public class Main {
         int total = readOptionalInt("Nowa liczba egzemplarzy (Enter bez zmian): ", book.total); // aktualizacja liczby kopii
         int borrowed = book.total - book.available; // liczba egzemplarzy poza biblioteką
 
-        if (total < 1 || total < borrowed) {
+        if (total < 1) { // liczba egzemplarzy musi być dodatnia
+            System.out.println("Liczba egzemplarzy musi być większa od zera.");
+            return;
+        }
+        if (total < borrowed) { // liczba egzemplarzy nie może spaść poniżej wypożyczonych
             System.out.println("Liczba egzemplarzy nie może być mniejsza od liczby wypożyczonych."); // ochrona aktywnych wypożyczeń
             return;
         }
