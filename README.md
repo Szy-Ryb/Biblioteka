@@ -18,7 +18,7 @@ Jeśli polskie znaki wyświetlają się niepoprawnie w Windows, przed uruchomien
 ## Menu
 
 1. Lista książek.
-2. Wypożyczenie — program pokazuje dostępne książki.
+2. Wypożyczenie - program pokazuje dostępne książki.
 3. Wypożyczone książki i termin zwrotu. Wpisz ID wypożyczenia, aby zwrócić książkę, lub `0`, aby pominąć.
 4. Lista książek po terminie.
 5. Dodawanie, edycja i usuwanie książek.
