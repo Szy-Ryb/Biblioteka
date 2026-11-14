@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-// Projekt zaliczeniowy: prosty system obsługi biblioteki.
+// projekt zaliczeniowy: prosty system obsługi biblioteki.
 public class Main {
 
     private static final Path PLIK_DANYCH = Paths.get("biblioteka.txt"); // plik z książkami i wypożyczeniami

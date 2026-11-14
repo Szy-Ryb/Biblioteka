@@ -6,7 +6,7 @@ Projekt jest pracą zaliczeniową.
 
 ## Uruchomienie
 
-Otwórz terminal w folderze z `Main.java` i `biblioteka.txt`, a następnie wpisz:
+Należy otwórz terminal w folderze z plikami `Main.java` i `biblioteka.txt`, `Main.java` zadziała bez `biblioteka.txt` i stworzy nowy plik po tą nazwaą, ale jest zalecane dla pełniejszego doświadczenia, a następnie wpisz:
 
 ```powershell
 javac -encoding UTF-8 Main.java
