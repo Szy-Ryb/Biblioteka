@@ -1,4 +1,4 @@
-# Dane biblioteki
+# Dane biblioteki (przykładowe książki)
 KSIAZKA;1;Percepcja psychiczna;Joseph Murphy;1;1
 KSIAZKA;2;Potęga podświadomości;Joseph Murphy;1;1
 KSIAZKA;3;Blue Phobia (tom 1);Eri Tsuruyoshi;1;1
