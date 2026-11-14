@@ -31,7 +31,7 @@ public class Main {
 
         try {
             while (true) { // wyświetlanie menu do chwili wyjścia
-                System.out.println("Copyright Szymon Rybikowski"); // copyright
+                System.out.println("Copyright: Szymon Rybikowski, nr indeksu: 128930"); // copyright
                 System.out.println();
                 System.out.println("===== MENU GŁÓWNE ====="); // główne opcje programu
                 System.out.println("1. Lista książek");
@@ -59,7 +59,7 @@ public class Main {
                         break;
                     case 6:
                         saveData(); // zapis danych przed zakończeniem
-                        System.out.println("Do widzenia!"); // pożegnanie użytkownika
+                        System.out.println("Zamykam... Do widzenia!"); // pożegnanie użytkownika
                         scanner.close(); // zwolnienie skanera wejścia
                         return;
                     default:
@@ -67,7 +67,7 @@ public class Main {
                 }
             }
         } catch (NoSuchElementException e) { // obsługa końca danych wejściowych
-            System.out.println("Koniec danych wejściowych. Zamykanie programu.");
+            System.out.println("Zamykam... Do widzenia!");
             return;
         }
     }
@@ -533,4 +533,4 @@ public class Main {
         }
     }
 }
-// copyright Szymon Rybikowski
+// copyright Szymon Rybikowski 128930
