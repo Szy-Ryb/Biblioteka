@@ -29,6 +29,7 @@ public class Main {
         }
 
         while (true) { // wyświetlanie menu do chwili wyjścia
+            System.out.println("Copyright Szymon Rybikowski"); // copyright
             System.out.println();
             System.out.println("===== MENU GŁÓWNE ====="); // główne opcje programu
             System.out.println("1. Lista książek");
