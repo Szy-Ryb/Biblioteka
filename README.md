@@ -1,12 +1,12 @@
 # Biblioteka
 
-Prosty program konsolowy w Javie. Dane książek i wypożyczeń zapisuje w pliku `biblioteka.txt`.
+Program w Javie. Dane książek i wypożyczeń zapisuje w pliku `biblioteka.txt`.
 
 Projekt jest pracą zaliczeniową.
 
 ## Uruchomienie
 
-Należy otwórz terminal w folderze z plikami `Main.java` i `biblioteka.txt`, `Main.java` zadziała bez `biblioteka.txt` i stworzy nowy plik po tą nazwaą, ale jest zalecane dla pełniejszego doświadczenia, a następnie wpisz:
+Otwórz terminal w folderze z plikiem `Main.java`. Plik `biblioteka.txt` nie jest wymagany przy pierwszym uruchomieniu. Bez niego program rozpoczyna z pustym katalogiem i tworzy plik przy pierwszym zapisie. Jeśli chcesz korzystać z przykładowego katalogu, pozostaw `biblioteka.txt` w tym folderze.
 
 ```powershell
 javac -encoding UTF-8 Main.java
@@ -18,13 +18,13 @@ Jeśli polskie znaki wyświetlają się niepoprawnie w Windows, przed uruchomien
 ## Menu
 
 1. Lista książek.
-2. Wypożyczenie - program pokazuje dostępne książki.
+2. Wypożycz książkę. Program pokazuje dostępne książki. Termin zwrotu przypada 14 dni po wypożyczeniu.
 3. Wypożyczone książki i termin zwrotu. Wpisz ID wypożyczenia, aby zwrócić książkę, lub `0`, aby pominąć.
 4. Lista książek po terminie.
 5. Dodawanie, edycja i usuwanie książek.
 6. Zapis i wyjście.
 
-W opcji 5 wybierz: `1` dodaj, `2` wybierz książkę do edycji lub usunięcia jednego egzemplarza, `3` anuluj. Tytuł znika z katalogu dopiero po usunięciu ostatniej kopii.
+W opcji 5 wybierz: `1` dodaj, `2` wybierz książkę do edycji lub usunięcia jednego egzemplarza, `3` anuluj. Puste pola i wciśnięcie Enter podczas edycji pozostawiają dotychczasowe wartości. Liczba egzemplarzy nie może być mniejsza od liczby aktywnych wypożyczeń. Usunięcie egzemplarza wymaga potwierdzenia i jest możliwe tylko wtedy, gdy jest dostępny; tytuł znika z katalogu po usunięciu ostatniej kopii.
 
 ## Dane
 
