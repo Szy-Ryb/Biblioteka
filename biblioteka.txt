@@ -1,0 +1,29 @@
+# Dane biblioteki
+KSIAZKA;1;Percepcja psychiczna;Joseph Murphy;1;1
+KSIAZKA;2;Potęga podświadomości;Joseph Murphy;1;1
+KSIAZKA;3;Blue Phobia (tom 1);Eri Tsuruyoshi;1;1
+KSIAZKA;4;Od dziś jestem zombie! (tom 1);scenariusz: Yugo Ishikawa, rysunki: Tsukasa Araki;1;1
+KSIAZKA;5;Sztuka wojenna;Sun Zi;3;3
+KSIAZKA;6;Zrozumieć lęki. Pokonać panikę;Pe Jacobi;1;1
+KSIAZKA;7;Jak zdobyć przyjaciół i zjednać sobie ludzi;Dale Carnegie;1;1
+KSIAZKA;8;Toksyczne relacje;Bernardo Stamateas;1;1
+KSIAZKA;9;Toksyczne emocje;Bernardo Stamateas;1;1
+KSIAZKA;10;Pozytywni ludzie;Bernardo Stamateas;1;1
+KSIAZKA;11;Podręcznik manipulacji;Gregory Hartley, Maryann Karinch;2;2
+KSIAZKA;12;Magiczne słowa;Jonah Berger;1;1
+KSIAZKA;13;1984;George Orwell;3;3
+KSIAZKA;14;Grupa Wagnera i inne prywatne armie świata;Artur Górski;1;1
+KSIAZKA;15;Smaki świata. Potrawy wiosenne;praca zbiorowa;1;1
+KSIAZKA;16;Opowieści galicyjskie;Andrzej Stasiuk;1;1
+KSIAZKA;17;Mózg ćwiczy;Kaja Nordengen;1;1
+KSIAZKA;18;Surrounded by Idiots;Thomas Erikson;3;3
+KSIAZKA;19;Wszechświat w twojej dłoni;Christophe Galfard;1;1
+KSIAZKA;20;Wszechświat w skorupce orzecha;Stephen Hawking;2;2
+KSIAZKA;21;Krótka historia czasu;Stephen Hawking;1;1
+KSIAZKA;22;Minecraft. Poradnik użytkownika czerwonego kamienia;Mojang;1;1
+KSIAZKA;23;Minecraft. Poradnik dla początkujących;Mojang;1;1
+KSIAZKA;24;Minecraft. Poradnik dla wojowników;Mojang;1;1
+KSIAZKA;25;Minecraft. Poradnik dla budowniczych;Mojang;1;1
+KSIAZKA;26;Rozbroić lęk;Risa Williams;1;1
+KSIAZKA;27;Zespół Aspergera;Kompletny przewodnik;2;2
+KSIAZKA;28;Władca Pierścieni;J.R.R. Tolkien;2;2
