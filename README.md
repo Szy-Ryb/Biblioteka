@@ -13,7 +13,7 @@ javac -encoding UTF-8 Main.java
 java Main
 ```
 
-Jeśli polskie znaki wyświetlają się niepoprawnie w Windows, przed uruchomieniem wpisz `chcp 65001`.
+Jeśli polskie znaki wyświetlają się niepoprawnie w Windows, przed uruchomieniem proszę wpisz `chcp 65001`.
 
 ## Menu
 
@@ -32,4 +32,4 @@ Program wczytuje dane z `biblioteka.txt` przy starcie i zapisuje je po każdej z
 
 ## Autor
 
-Szymon Rybikowski
+Szymon Rybikowski indeks 128930
